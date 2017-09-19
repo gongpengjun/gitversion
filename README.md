@@ -5,6 +5,11 @@ Automatically generate gitversion (like svnversion) as Xcode project's build num
 
 ### Generate gitversion from HEAD commit
 
+```
+git rev-list --count HEAD
+```
+
+__Example__
 
 ```
 gitversion git:(master) $ git rev-list --count HEAD
@@ -14,8 +19,26 @@ gitversion git:(master) $ git rev-list --count HEAD
 ### Parse gitversion to commit
 
 ```
+git log --reverse --oneline|head -n N|tail -n 1
+```
+
+__Example__
+
+```
 gitversion git:(master) $ git log --reverse --oneline|head -n 4|tail -n 1
 fc88c71 code snippet of the way to integrate gitversion as BuildNumber in Xcode
+```
+
+__Alternative:__
+
+```
+git log --reverse --oneline|sed '4!d'
+```
+
+or
+
+```
+git log --reverse --oneline|awk 'NR==4'
 ```
 
 ## References
