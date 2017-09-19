@@ -44,6 +44,7 @@ git log --reverse --oneline|awk 'NR==4'
 ## References
 
 - [iOS: Changing info.plist during build phase](https://stackoverflow.com/questions/6912743/ios-changing-info-plist-during-build-phase/26354117#26354117)
+- [Get specific line from text file using just shell script](https://stackoverflow.com/questions/19327556/get-specific-line-from-text-file-using-just-shell-script/19327690#19327690)
 - [svnversion](http://svnbook.red-bean.com/en/1.7/svn.ref.svnversion.re.html)
 - [git rev-list](https://git-scm.com/docs/git-rev-list)
 - [git log](https://git-scm.com/docs/git-log)
